@@ -1,0 +1,11 @@
+                    try:
+                        if game.isThereAnExactFreeSpace(getRowAndColomnFromMousePosition(pygame.mouse.get_pos())[0],
+                                                        getRowAndColomnFromMousePosition(pygame.mouse.get_pos())[1]):
+                            try:
+                                game = n.send(str(getRowAndColomnFromMousePosition(pygame.mouse.get_pos())[0]) + str(
+                                    getRowAndColomnFromMousePosition(pygame.mouse.get_pos())[1]))
+                            except:
+                                pass
+                            redrawWindow(win, game, player)
+                    except:
+                        pass
