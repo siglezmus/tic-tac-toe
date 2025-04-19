@@ -4,7 +4,7 @@ import pickle
 from game import Game
 from threading import Lock
 
-server = "192.168.43.208"  # тут вставь свой ipv4 адрес
+server = "192.168.43.208"  # put your ipv4 here
 
 port = 5555
 
